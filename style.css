@@ -826,52 +826,100 @@ section.is-visible {
 .
 
 /* ==========
-   HEADER — MOBILE
+   HEADER — MOBILE FIX
    ========== */
+
 @media (max-width: 900px) {
   .header-inner {
     height: 64px;
+    padding: 0 20px;
   }
 
-  /* esconde nav por padrão no mobile */
+  /* esconde o menu horizontal */
   .main-nav {
     position: fixed;
-    inset: 64px 0 auto 0; /* logo abaixo do header */
+    top: 64px;
+    left: 0;
+    right: 0;
+
     background: rgba(250, 247, 242, 0.98);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-soft);
-    padding: 16px 20px 20px;
+
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 14px;
+
+    padding: 16px 24px;
 
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none;
+
     transition:
-      transform 0.2s ease-out,
-      opacity 0.2s ease-out;
+      transform 0.25s ease,
+      opacity 0.25s ease;
   }
 
-  /* quando abrir o menu */
+  /* quando o menu aparece */
   .main-nav.is-open {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
   }
 
-  .nav-link,
-  .nav-link-cta {
+  /* Links */
+  .nav-link {
     font-size: 12px;
+    padding: 6px 0;
   }
 
+  /* CTA */
   .nav-link-cta {
     width: 100%;
     text-align: center;
   }
 
-  /* mostra o hambúrguer no mobile */
+  /* botão hambúrguer aparece */
   .nav-toggle {
     display: flex;
+  }
+}
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+
+  background: #2b241f;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #f5eee6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow: 0 4px 18px rgba(0,0,0,0.3);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 200; /* acima de tudo */
+}
+
+.whatsapp-float:hover {
+  background: #3a312b;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
   }
 }
