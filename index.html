@@ -16,102 +16,140 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HEADER + HERO -->
-  <header class="site-header" id="topo">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-mark">RB</div>
-        <div class="brand-text">
-          <span class="brand-name">Raíssa Bonorino</span>
-          <span class="brand-role">Psicóloga • CRP 07/36790</span>
-        </div>
+
+  <!-- HEADER -->
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+
+    <div class="brand">
+      <div class="brand-mark">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="1"
+            y="1"
+            width="38"
+            height="38"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+          />
+          <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-family="Playfair Display, 'Times New Roman', serif"
+            font-size="18"
+            letter-spacing="2"
+            fill="currentColor"
+          >
+            RB
+          </text>
+        </svg>
       </div>
 
-      <nav class="main-nav">
-        <a href="#inicio" class="nav-link">Início</a>
-        <a href="#quem-sou-eu" class="nav-link">Quem sou eu</a>
-        <a href="#sobre-terapia" class="nav-link">Sobre a terapia</a>
-        <a href="#abordagem" class="nav-link">Abordagem</a>
-        <a href="#temas" class="nav-link">Temas trabalhados</a>
-        <a href="#atendimentos" class="nav-link">Atendimentos</a>
-        <a href="#contato" class="nav-link nav-link-cta">Contato</a>
-        </nav>
-
-      <button class="nav-toggle" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-      </button>
+      <div class="brand-text">
+        <span class="brand-name">Raíssa Bonorino</span>
+        <span class="brand-role">Psicóloga • CRP 07/36790</span>
+      </div>
     </div>
-  </header>
+
+    <nav class="main-nav">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#quem-sou-eu" class="nav-link">Quem sou eu</a>
+      <a href="#sobre-terapia" class="nav-link">Sobre a terapia</a>
+      <a href="#primeira-sessao" class="nav-link">Primeira sessão</a>
+      <a href="#abordagem" class="nav-link">Abordagem</a>
+      <a href="#contato" class="nav-link nav-link-cta">Contato</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
 
   <main>
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-tag">Agenda aberta para novos atendimentos</div>
-          <h1 class="hero-title">
-            Psicoterapia psicanalítica com rigor técnico e escuta qualificada
-          </h1>
-          <p class="hero-subtitle">
-            Atendimento psicológico fundamentado em psicanálise, com foco em compreender
-            a singularidade de cada sujeito e sustentar um espaço de análise sério,
-            ético e comprometido com o processo.
-          </p>
+   <!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-bg-image"></div>
+  <div class="hero-overlay"></div>
 
-          <div class="hero-meta">
-            <span>Psicóloga graduada pela PUCRS</span>
-            <span>Pós-graduação em Psicanálise e Análise do Contemporâneo</span>
-            <span>Atendimento psicológico online</span>
-          </div>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">Agenda aberta para novos atendimentos</div>
 
-          <div class="hero-actions">
-            <button
-              class="btn btn-primary"
-              data-whatsapp-button
-              data-whatsapp-origin="hero"
-            >
-              Agendar atendimento via WhatsApp
-            </button>
-
-            <a
-                href="mailto:psi.raissabonorino@gmail.com?subject=Agendamento%20de%20psicoterapia"
-                class="btn btn-ghost"
-                >
-                Escrever por e-mail
-            </a>
-
-          </div>
-
-          <div class="hero-contact-info">
-            <span>WhatsApp: <strong>+55 (51) 9909-1504</strong></span>
-            <span>E-mail: <strong>psi.raissabonorino@gmail.com</strong></span>
-            <span>Instagram: <strong>@raissabpsi</strong></span>
-          </div>
+      <div class="hero-heading">
+            <h1 class="hero-title">Raíssa Ribeiro Bonorino</h1>
+            <p class="hero-role">Psicóloga - CRP 07/36790</p>
         </div>
 
-        <div class="hero-photo-wrapper">
-          <div class="hero-photo-frame">
-            <img
-              src="img/perfil.jpeg"
-              alt="Foto da psicóloga Raíssa Bonorino"
-              class="hero-photo"
-            />
-          </div>
-          <div class="hero-photo-caption">
-            <span class="caption-name">Raíssa Bonorino</span>
-            <span class="caption-role">Psicóloga clínica • CRP 07/36790</span>
-          </div>
-        </div>
+      <p class="hero-subtitle">
+        Atendimento psicológico fundamentado em psicanálise, com foco em compreender
+        a singularidade de cada sujeito e sustentar um espaço de análise sério,
+        ético e comprometido com o processo.
+      </p>
+
+      <div class="hero-meta">
+        <span>Psicóloga graduada pela PUCRS</span>
+        <span>Pós-graduação em Psicanálise e Análise do Contemporâneo - PUCRS</span>
+        <span>Atendimento psicológico online e presencial em Porto Alegre/RS</span>
       </div>
-    </section>
 
-    <!-- QUEM SOU EU -->
+      <div class="hero-actions">
+        <button
+          class="btn btn-primary"
+          data-whatsapp-button
+          data-whatsapp-origin="hero"
+        >
+          Agendar atendimento via WhatsApp
+        </button>
+
+        <a
+          href="mailto:psi.raissabonorino@gmail.com?subject=Agendamento%20de%20psicoterapia"
+          class="btn btn-ghost"
+        >
+          Escrever por e-mail
+        </a>
+      </div>
+
+      <div class="hero-contact-info">
+        <span>WhatsApp: <strong>+55 (51) 9909-1504</strong></span>
+        <span>E-mail: <strong>psi.raissabonorino@gmail.com</strong></span>
+        <span>Instagram: <strong>@raissabpsi</strong></span>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrapper">
+      <div class="hero-photo-frame">
+        <img
+          src="img/perfil.jpeg"
+          alt="Foto da psicóloga Raíssa Bonorino"
+          class="hero-photo"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- QUEM SOU EU -->
 <section id="quem-sou-eu" class="about-section">
-  <div class="container about-grid">
+  <div class="about-bg-image"></div>
+  <div class="about-overlay"></div>
 
+  <div class="container about-inner">
     <div class="about-content">
-      <h2 class="section-title">Quem sou eu</h2>
+      <h2 class="section-title about-title-light">Quem sou eu</h2>
 
       <p>
         Psicóloga formada pela PUCRS e especialista em Psicanálise, iniciei minha trajetória clínica em 2019, atuando no atendimento de crianças e adolescentes, coordenação de grupos terapêuticos e elaboração de laudos psicológicos.
@@ -125,15 +163,9 @@
         Desde minha graduação em 2021, sigo dedicando minha prática à clínica psicanalítica, sustentando um trabalho comprometido com a escuta, o rigor técnico e o percurso singular de cada paciente.
       </p>
     </div>
-
-    <div class="about-photo-wrapper">
-      <div class="about-photo-frame">
-        <img src="img/quem_sou.jpeg" alt="Foto da psicóloga Raíssa Bonorino" class="about-photo" />
-      </div>
-    </div>
-
   </div>
 </section>
+
 
 <!-- SOBRE A TERAPIA -->
 <section id="sobre-terapia" class="therapy-section">
@@ -165,6 +197,134 @@
 
   </div>
 </section>
+
+<!-- PRIMEIRA SESSÃO -->
+<section id="primeira-sessao" class="first-session-section">
+  <div class="container first-session-inner">
+
+    <h2 class="section-title">Primeira sessão</h2>
+
+    <div class="first-session-content">
+      <p>
+        O primeiro encontro é um espaço inicial de acolhimento e escuta das principais demandas. Ele serve para nos conhecermos, conversarmos sobre o motivo da busca e esclarecer dúvidas sobre o processo da psicoterapia.
+      </p>
+
+      <p>
+        Ao longo das sessões, vamos aprofundando cada questão trazida, conhecendo mais sobre a tua história, os acontecimentos que consideras importantes e aquilo que deseja compartilhar no teu tempo.
+      </p>
+    </div>
+
+    <div class="first-session-cta">
+      <button
+        class="btn btn-primary"
+        data-whatsapp-button
+        data-whatsapp-origin="primeira-sessao"
+      >
+        Agendar primeira sessão
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABORDAGEM -->
+<section id="abordagem" class="approach-section">
+
+  <!-- imagem de fundo -->
+  <div class="approach-bg-image"></div>
+  <div class="approach-bg-overlay"></div>
+
+  <div class="container approach-grid">
+
+    <div class="approach-content">
+      <h2 class="section-title">Abordagem</h2>
+
+      <p>
+        A psicoterapia de abordagem psicanalítica acolhe diferentes tipos de demanda, tanto de quem já fez quanto de quem nunca fez terapia. É indicada para diversas faixas etárias e não exclui particularidades: cada pessoa é considerada em sua singularidade, assim como a forma como vive e expressa seu sofrimento.
+      </p>
+
+      <p>
+        Esse espaço é sustentado por um compromisso ético rigoroso, garantindo sigilo, respeito e a construção de uma relação de confiança. A partir de perguntas, apontamentos e, principalmente, da tua própria fala, vamos encontrando caminhos para o autoconhecimento e para o enfrentamento do que gera sofrimento e angústia. O foco é compreender os motivos pelos quais determinados sentimentos e repetências se apresentam, para que possas participar ativamente do teu próprio processo de cuidado psíquico.
+      </p>
+
+      <p>
+        A ética profissional garante que o ambiente seja seguro para explorar inclusive questões delicadas, sempre com cuidado. Ao longo do processo, torna-se possível desenvolver maior clareza sobre si, fortalecendo a autonomia emocional e os próprios caminhos internos.
+      </p>
+    </div>
+
+    <!-- imagem principal da seção (a original: equilíbrio.jpeg) -->
+    <div class="approach-image-wrapper">
+      <img
+        src="img/equilibrio.jpeg"
+        alt="Ilustração abstrata representando equilíbrio interno"
+        class="approach-image"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CONTATO -->
+<section id="contato" class="contact-section">
+
+  <div class="contact-bg-image"></div>
+  <div class="contact-overlay"></div>
+
+  <div class="container contact-inner">
+
+    <h2 class="section-title contact-title">Contato</h2>
+
+    <p class="contact-description">
+      Caso deseje agendar uma consulta, tirar dúvidas ou solicitar mais informações,
+      utilize um dos canais abaixo.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5551999091504" target="_blank" class="contact-item">
+        <span class="contact-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20.5 11.5c0 4.7-3.8 8.5-8.5 8.5-1.5 0-2.9-.4-4.1-1l-3.4 1.1 1.1-3.3c-.8-1.3-1.3-2.8-1.3-4.4 0-4.7 3.8-8.5 8.5-8.5s8.5 3.8 8.5 8.5z"/>
+  <path d="M15.3 13.3c-.1 0-.8-.4-.9-.5-.1-.1-.2-.1-.4.1-.1.1-.4.5-.5.6-.1.1-.2.1-.4 0-.2-.1-.9-.3-1.7-1.1-.6-.6-1-1.3-1.1-1.5-.1-.2 0-.3.1-.4.1-.1.2-.2.2-.3.1-.1.1-.2.2-.3.1-.1 0-.2 0-.3s-.3-.8-.5-1.1c-.1-.3-.3-.3-.4-.3h-.3c-.1 0-.3 0-.4.2-.2.2-.8.7-.8 1.7s.8 1.9.9 2 .1.1.2.3c.5.7 1.2 1.2 1.4 1.3.2.1.7.3 1 .4.4.1.7.1 1 .1.3 0 .7-.3.8-.5.1-.2.1-.4.1-.5 0-.1-.1-.1-.2-.2z"/>
+</svg>
+        </span>
+        <span class="contact-text">WhatsApp: +55 (51) 9909-1504</span>
+      </a>
+
+      <!-- E-mail -->
+      <a href="mailto:psi.raissabonorino@gmail.com" class="contact-item">
+        <span class="contact-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4 4h16v16H4z"/>
+  <path d="M4 4l8 7 8-7"/>
+</svg>
+        </span>
+        <span class="contact-text">E-mail: psi.raissabonorino@gmail.com</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/raissabpsi" target="_blank" class="contact-item">
+        <span class="contact-icon">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="3" width="18" height="18" rx="4"/>
+  <circle cx="12" cy="12" r="4"/>
+  <circle cx="17" cy="7" r="1"/>
+</svg>
+        </span>
+        <span class="contact-text">@raissabpsi</span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
 
 
 
