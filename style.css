@@ -156,6 +156,7 @@ button {
   transition: width 0.18s ease;
 }
 
+
 .nav-link:hover {
   color: var(--text-main);
 }
@@ -923,3 +924,4 @@ section.is-visible {
     height: 52px;
   }
 }
+
