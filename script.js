@@ -61,3 +61,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// ANIMAÇÃO SUAVE NAS SEÇÕES AO ROLAR
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target); // anima só uma vez
+        }
+      });
+    },
+    {
+      threshold: 0.15, // 15% da seção na tela já ativa
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector(".nav-toggle");
+  const mainNav = document.querySelector(".main-nav");
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", () => {
+      mainNav.classList.toggle("is-open");
+    });
+
+    // opcional: fechar o menu ao clicar em um link
+    mainNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("is-open");
+      });
+    });
+  }
+});
+
