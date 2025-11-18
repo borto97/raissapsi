@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  
   // ==========================
   // Botões de WhatsApp
   // ==========================
@@ -120,3 +121,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
