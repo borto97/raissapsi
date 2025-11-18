@@ -19,7 +19,6 @@ body {
   color: #1d1d1b;      /* preto quente, não tão pesado */
 }
 
-
 img {
   max-width: 100%;
   display: block;
@@ -915,4 +914,5 @@ section.is-visible {
     height: 52px;
   }
 }
+
 
