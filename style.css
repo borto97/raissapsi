@@ -71,9 +71,10 @@ button {
   padding: 0 20px;
 }
 
-/* ==========
-   HEADER
+/* ========== 
+   HEADER 
    ========== */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -95,6 +96,7 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .brand-mark {
@@ -128,7 +130,7 @@ button {
   color: var(--text-soft);
 }
 
-/* Navegação */
+/* Navegação (desktop) */
 .main-nav {
   display: flex;
   align-items: center;
@@ -176,7 +178,7 @@ button {
   display: none;
 }
 
-/* Toggle mobile */
+/* Toggle mobile (escondido no desktop) */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -196,8 +198,58 @@ button {
   height: 2px;
   width: 100%;
   background: #3f332a;
-  border-radius: 0;
 }
+
+/* ========== 
+   HEADER — MOBILE 
+   ========== */
+@media (max-width: 900px) {
+  .header-inner {
+    height: 64px;
+  }
+
+  /* nav vira painel drop-down e some do fluxo */
+  .main-nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+
+    background: rgba(250, 247, 242, 0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-soft);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 16px 24px 20px;
+
+    display: none;
+    z-index: 45;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-link,
+  .nav-link-cta {
+    font-size: 12px;
+  }
+
+  .nav-link-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* mostra o hambúrguer */
+  .nav-toggle {
+    display: flex;
+    margin-left: 12px;
+  }
+}
+
 
 /* ==========
    BOTÕES
@@ -824,67 +876,6 @@ section.is-visible {
   transform: translateY(0);
 }
 .
-
-/* ==========
-   HEADER — MOBILE FIX
-   ========== */
-
-@media (max-width: 900px) {
-  .header-inner {
-    height: 64px;
-    padding: 0 20px;
-  }
-
-  /* esconde o menu horizontal */
-  .main-nav {
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-
-    background: rgba(250, 247, 242, 0.98);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-soft);
-
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-
-    padding: 16px 24px;
-
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-
-    transition:
-      transform 0.25s ease,
-      opacity 0.25s ease;
-  }
-
-  /* quando o menu aparece */
-  .main-nav.is-open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  /* Links */
-  .nav-link {
-    font-size: 12px;
-    padding: 6px 0;
-  }
-
-  /* CTA */
-  .nav-link-cta {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* botão hambúrguer aparece */
-  .nav-toggle {
-    display: flex;
-  }
-}
 
 /* BOTÃO FLUTUANTE WHATSAPP */
 .whatsapp-float {
