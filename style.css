@@ -922,11 +922,6 @@ section.is-visible {
   text-justify: inter-word;
 }
 
-.about-section p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .therapy-section p {
   text-align: justify;
   text-justify: inter-word;
@@ -946,4 +941,5 @@ section.is-visible {
   text-align: justify;
   text-justify: inter-word;
 }
+
 
