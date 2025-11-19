@@ -913,4 +913,37 @@ section.is-visible {
     height: 52px;
   }
 }
+/* ==========
+   TEXTOS ALINHADOS
+   ========== */
+
+.section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.therapy-section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.first-session-section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.approach-section p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.hero-subtitle {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
